@@ -1,0 +1,144 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	min-height: 100%;
+	max-width: 100%;
+	overflow-x: hidden;
+	box-sizing: border-box;
+}
+
+p {
+	display: inline-block;
+	word-wrap: break-word;
+	text-align: center;
+}
+.date {
+	width: 100%;
+}
+h3 {
+	text-align: center;
+	padding: 8px;
+	height: 20%;
+}
+
+#sec-1 {
+	display: flex;
+	justify-content: space-between;
+	flex-flow: wrap column;
+	align-items: center;
+	width: 98%;
+	height: 100%;
+	margin: 10px 10px;
+	border: 2px solid black;
+}
+
+#heading-container {
+	width: 30%;
+	height: 4rem;
+	margin: 27px auto;
+	border: 2px solid black;
+	text-align: center;
+	text-transform: capitalize;
+	font-size: 29px;
+	font-weight: 700;
+	padding: 10px;
+}
+#events-container {
+	width: 100%;
+	display: flex;
+	flex-flow: wrap row;
+	justify-content: space-evenly;
+	line-height: 50px;
+	gap: 19px;
+	height: 100%;
+	padding: 16px;
+}
+
+.event-img {
+	width: 100%;
+	height: 100%;
+}
+
+.event-holder {
+	display: flex;
+	width: 23%;
+	height: 100%;
+	flex-flow: column;
+	border: 3px solid black;
+}
+.event-con-2 {
+	display: flex;
+	margin: 5px 5px 0px 5px;
+}
+.event-details {
+	width: 50%;
+}
+.img-holder {
+	width: 50%;
+	height: 100%;
+	overflow: hidden;
+}
+.book-bttn {
+	padding: 5px;
+	width: 80%;
+	border: none;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+	.event-holder {
+		width: 100%;
+	}
+
+	#heading-container {
+		width: 73%;
+		font-size: 2em;
+		height: 4rem;
+	}
+	#sec-1 {
+		margin: 3px 3px;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+	.event-holder {
+		width: 41%;
+	}
+}
+
+@media (min-width: 1024px) and (max-width: 1430px) {
+	.event-holder {
+		width: 31%;
+	}
+}
+
+@media (min-width: 2560px) and (max-width: 2777px) {
+	.event-details {
+		width: 50%;
+		display: flex;
+		flex-flow: column;
+		justify-content: center;
+		align-items: center;
+	}
+	#sec-1 {
+		gap: 2em;
+	}
+
+	#events-container {
+		gap: 6em;
+	}
+	h3,
+	p {
+		font-size: 2em;
+	}
+	.book-bttn {
+		padding: 5px;
+		width: 78%;
+		border: none;
+		height: 2em;
+		font-size: 25px;
+	}
+}
